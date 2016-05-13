@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="container">
+  <table class="bordered center responsive">
+   <thead>
+     <tr>
+      <th id="blue">XXX</th>
+      <th>xxx</th>
+      <th>XXX</th>
+      <th>xxx</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+      <td>xXxX</td>
+      <td id="blue2">xXxX</td>
+      <td>lul</td>
+      <td>lal</td>
+     </tr>
+     <tr>
+      <td>xXxX</td>
+      <td>xXxX</td>
+      <td id="blue3">lal</td>
+      <td>lal</td>
+     </tr>
+     <tr>
+      <td>xXxX</td>
+      <td>xXxX</td>
+      <td>lel</td>
+      <td id="blue4">lal</td>
+     </tr>
+   </tbody>
+  </table>
+</div>
+<div class="container">
+  <div class="center">
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card blue">
+          <div class="card-content white-text">
+            <span class="card-title">This is an element</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card blue">
+          <div class="card-content white-text">
+            <span class="card-title">So is this</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card blue">
+          <div class="card-content white-text">
+            <span class="card-title">This too</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <input id='y' value='123456789'/>
+  <br/>
+  <input id='y_hidden'/>
+</div>
+<script type="text/javascript">
+  var y = document.getElementById('y');
+  var hidden = document.getElementById('y_hidden');
+
+  hidden.value = new Array(y.value.length-3).join('x') + y.value.substr(y.value.length-4, 4);
+
+  document.getElementById("blue").style.backgroundColor = "#2196f3";
+  document.getElementById("blue2").style.backgroundColor = "#2196f3";
+  document.getElementById("blue3").style.backgroundColor = "#2196f3";
+  document.getElementById("blue4").style.backgroundColor = "#2196f3";
+</script>
+</body>
+</html>
